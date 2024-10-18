@@ -1,0 +1,104 @@
+header{
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-logo{
+    width: 40px;
+    border-radius: 10px
+}
+a{
+    text-decoration: none;
+}
+.vh-50{
+   padding-top: 50px;
+}
+
+/* Estilos para el enlace activo */
+.link.on,
+.link:hover,
+.link:focus {
+  color: #fff; 
+  background-color: #83da86; /* Color de fondo del enlace cuando está activo */
+  border-radius: 15px; /* Borde redondeado para el enlace activo */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Estilos adicionales para el enlace activo cuando se desplaza sobre él */
+.link:hover,
+.link:focus {
+  background-color: #27c45b; /* Color de fondo más oscuro cuando se desplaza sobre el enlace */
+}
+
+/*TRansiciones entre paginas*/
+
+body {
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal durante las transiciones */
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards; /* Define la animación de fade-in */
+    opacity: 0; /* Establece la opacidad inicial en 0 para que la página comience invisible */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Inicio de la animación: opacidad 0 */
+    }
+    to {
+        opacity: 1; /* Fin de la animación: opacidad 1 */
+    }
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 49%;
+    width: 2px;
+    background-color: #0558EE; /* Color de la línea de tiempo */
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin: 50px 0;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #27c45b; /* Color de los puntos en la línea de tiempo */
+    transform: translateY(-50%);
+  }
+  
+  .timeline-date {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .timeline-content {
+    padding-left: 20px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+footer{
+    padding-top: 50px;
+}
