@@ -1,0 +1,22 @@
+nav{
+
+   padding-top: 30px;
+}
+body{
+  background-image: url(img/fondo.jpg);
+}
+/* Estilos para el enlace activo */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #fff; 
+  background-color: #83da86; /* Color de fondo del enlace cuando está activo */
+  border-radius:15px; /* Borde redondeado para el enlace activo */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Estilos adicionales para el enlace activo cuando se desplaza sobre él */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: #4fa052; /* Color de fondo más oscuro cuando se desplaza sobre el enlace */
+}
